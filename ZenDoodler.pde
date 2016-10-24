@@ -22,8 +22,6 @@ Point bottomLeft;
 // Loop that continuously gets called after the one-time setup
 void draw() {
 
-  //OutlineQuad os = new OutlineQuad(grid.corners[0], grid.corners[19], grid.corners[16], grid.corners[3]);
-
   for (int i = 0; i <= 14; i++) {
     OutlineQuad o = new OutlineQuad(grid.corners[i], grid.corners[i+5], grid.corners[i+4], grid.corners[i+1]);
     outlines.add(o);
