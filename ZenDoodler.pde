@@ -2,6 +2,7 @@ int BGCOLOR = 0;
 Grid grid;
 int corner = 0;
 
+// One time init for the entire applet 
 void setup() {
   size(1280, 720);
   background(BGCOLOR);
@@ -18,6 +19,7 @@ Point bottomRight;
 Point topRight;
 Point bottomLeft;
 
+// Loop that continuously gets called after the one-time setup
 void draw() {
 
   //OutlineQuad os = new OutlineQuad(grid.corners[0], grid.corners[19], grid.corners[16], grid.corners[3]);
