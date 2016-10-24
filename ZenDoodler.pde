@@ -22,6 +22,8 @@ Point bottomLeft;
 // Loop that continuously gets called after the one-time setup
 void draw() {
 
+
+
   for (int i = 0; i <= 14; i++) {
     OutlineQuad o = new OutlineQuad(grid.corners[i], grid.corners[i+5], grid.corners[i+4], grid.corners[i+1]);
     outlines.add(o);
@@ -81,4 +83,6 @@ void animateLine(Line toAnimate) {
   line(toAnimate.origin.x_coord, toAnimate.origin.y_coord, 
     toAnimate.origin.x_coord + float(frameCount % framesToAnim) / framesToAnim * (toAnimate.destination.x_coord - toAnimate.origin.x_coord), 
     toAnimate.origin.y_coord + float(frameCount % framesToAnim) / framesToAnim * (toAnimate.destination.y_coord - toAnimate.origin.y_coord));
+
 }
+
